@@ -1,0 +1,352 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- BEGIN CommonJSToInclude.jspf -->
+<meta name="CommerceSearch" content="storeId_11171" />
+<link rel="shortcut icon" href="http://mall.gree.com/wcsstore/GreeStorefrontAssetStore/images/icon-favicon.ico"
+	mce_href="http://mall.gree.com/wcsstore/GreeStorefrontAssetStore/images/icon-favicon.ico" />
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<link rel="stylesheet" type="text/css" href="css/header.css" />
+<link rel="stylesheet" type="text/css" href="css/Pop-up-box.css" />
+<link rel="stylesheet" type="text/css" href="css/footer.css" />
+<!DOCTYPE HTML>
+<!-- BEGIN OrderItemDisplay.jsp -->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wairole="http://www.w3.org/2005/01/wai-rdf/GUIRoleTaxonomy#"
+	xmlns:waistate="http://www.w3.org/2005/07/aaa" lang="zh" xml:lang="zh">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/chanel.css" />
+	<link rel="stylesheet" href="css/vipcenter.css" type="text/css" />
+	<title>购物车1</title>
+</head>
+<body>
+	<div class="carthead">
+		<!-- BEGIN Header.jsp -->
+		<input class="logonoffurl"
+			value="https://mall.gree.com/mall/Logoff?catalogId=10001&langId=-7&storeId=11171&URL=LogonForm"
+			type="hidden"></input>
+		<div class="shortcut">
+			<div class="topbarbgcolor clearfix">
+				<div class="wrapper">
+					<ul class="quickMenu fl clearfix">
+						<li class="pr topShoucang"><b></b><a href="javascript:void(0)">收藏我们</a></li>
+					</ul>
+					<ul class="fr topNav">
+						<li class="logon pr">
+							<a
+								href="javascript:headerLogon('https://mall.gree.com/mall/LogonForm?catalogId=10001&amp;myAcctMain=1&amp;langId=-7&amp;storeId=11171','header')">[登录]</a>
+							<a
+								href="javascript:headerRegist('https://mall.gree.com/mall/UserRegistrationForm?new=Y&amp;catalogId=10001&amp;myAcctMain=1&amp;langId=-7&amp;storeId=11171','header')">[注册]</a>
+						</li>
+						<li class="pr"><a href="http://www.gree.com/" target="_blank">格力官网</a><em></em></li>
+						<li class="pr hd_mobile"><a class="mb_menu" href="javascript:void(0)">手机商城</a><em></em>
+							<div class="hd_mobile_show">
+								<p class="hd_mobile_tips">扫描二维码下载客户端</p>
+								<div class="hd_mobile_list clearfix"> <i></i>
+									<div class="fl">
+										<a class="hd_iphone"
+											href="https://itunes.apple.com/cn/app/ge-li-guan-fang-shang-cheng/id962646876?mt=8">iPhone</a>
+										<a class="hd_iPad"
+											href="https://itunes.apple.com/cn/app/ge-li-guan-fang-shang-chenghd/id966754651?mt=8">iPad</a>
+										<a class="hd_android"
+											href="http://mall.gree.com/wcsstore/GreeStorefrontAssetStore/Download/Android/GeliApp.apk">Android</a>
+									</div>
+									<div class="hd_mobile_content"><img
+											src="http://mall.gree.com/wcsstore/GreeStorefrontAssetStore/images/erweima.png" /></div>
+								</div>
+							</div>
+						</li>
+						<li class="pr appSC"><a
+								href="http://mall.gree.com/mall/HelpCenterView?catalogId=10001&langId=-7&storeId=11171">帮助中心</a><em></em><b></b>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="suspensionBox">
+			<a class="toTop" id="roll_top"><s></s>返回顶部</a>
+		</div>
+		<div class="topbackdiv loaddivback" style="display: none;"></div>
+		<!--外面的黑背景-->
+		<div id="loadingPage" class="loaddivinfo" style="display: none;">数据加载中, 请稍等...</div>
+		<!--laoding-->
+		<!-- END Header.jsp -->
+	</div>
+	<div class="wrapper mt10">
+		<div class="cartHeader clearfix"><a class="logo" href="http://mall.gree.com/mall/zh-CN/zhuhai"><img
+					src="img/logo.png"></a>
+			<div class="cartStep1">我的购物车 </div>
+		</div>
+	</div>
+	<div class="wrapper mt20">
+		<div class="cart-inner">
+			<div class="ShopCartDisplay">
+				<input class="needStoreId" value="10653" type="hidden">
+				<!-- BEGIN EmptyShopCartDisplay.jspf-->
+				<div class="cartEmpty">
+					<h2>购物车内暂时没有商品，<a class="c_red"
+							href="javascript:emptyCartLogon('https://mall.gree.com/mall/LogonForm?catalogId=10001&amp;myAcctMain=1&amp;langId=-7&amp;storeId=11171','empty')">登录</a>后可同步电脑与手机购物车
+					</h2>
+				</div>
+				<!-- END EmptyShopCartDisplay.jspf-->
+				<div class="cartTuijian mt20 clearfix">
+					<h1 class="cartTuijianTitle">为您推荐</h1>
+					<a class="prev ml20" onclick="recommendationJS.showNext(-5)"></a>
+					<div class="cartTuijianBox fl mt20 mb20">
+						<!-- BEGIN XCatalogEntryRecommendationTuijian.jsp -->
+						<script>
+							recommendationJS.maxProductsToDisplay = '8';
+							recommendationJS.emsName = 'CartCategoryListRecommendation';
+							recommendationJS.storeId = '11171';
+							recommendationJS.totalCatentryIds = '4551,3337,11428,12456';
+							recommendationJS.serverURL = 'https://mall.gree.com/mall/';
+							recommendationJS.ajaxStoreImageDir = 'http://mall.gree.com/wcsstore/GreeStorefrontAssetStore/';
+						</script>
+						<!-- BEGIN XCatalogEntryRecommendationTuijian_Horizontal_UI.jspf -->
+						<ul class="clearfix pl10" id="recommendation_ajaxReflesh_ul">
+							<li>
+								<!-- BEGIN RecommendedCatalogEntryDisplay.jspf -->
+								<!-- BEGIN CatalogEntryDisplay.jsp -->
+								<script>
+								</script>
+								<a class="Img185" id="catalogEntry_img4551"
+									href="https://mall.gree.com/mall/ClickInfo?URL=http%3a%2f%2fmall.gree.com%2fmall%2fzh-CN%2fzhuhai%2fKB452041200&amp;evtype=CpgnClick&amp;mpe_id=18601&amp;intv_id=18001&amp;storeId=11171&amp;catalogId=10001&amp;langId=-7"
+									title="品圆变频空调_智控随心 舒适有度_KFR-26GW/(26592)FNhDa-A3 荧光白 冷暖大1匹机 挂壁式" target="_blank">
+									<img src="http://mall.gree.com/wcsstore/GreeStorefrontAssetStore/images/product/KB452041200/300X300/KB452041200_01.jpg"
+										>
+								</a>
+								<a class="ProTitle185" aria-hidden="true" tabindex="-1"
+									id="WC_CatalogEntryDBThumbnailDisplayJSPF_4551_link_9b"
+									href="https://mall.gree.com/mall/ClickInfo?URL=http%3a%2f%2fmall.gree.com%2fmall%2fzh-CN%2fzhuhai%2fKB452041200&amp;evtype=CpgnClick&amp;mpe_id=18601&amp;intv_id=18001&amp;storeId=11171&amp;catalogId=10001&amp;langId=-7"
+									title="品圆变频空调_智控随心 舒适有度_KFR-26GW/(26592)FNhDa-A3 荧光白 冷暖大1匹机 挂壁式">品圆变频空调_智控随心
+									舒适有度_KFR-26GW/(26592)FNhDa-A3 荧光白 冷暖大1匹机 挂壁式</a>
+								<p class="tc Price185">
+									¥2999
+								</p>
+								<!-- END CatalogEntryDisplay.jsp -->
+								<!-- END RecommendedCatalogEntryDisplay.jspf -->
+							</li>
+							<li>
+								<!-- BEGIN RecommendedCatalogEntryDisplay.jspf -->
+								<!-- BEGIN CatalogEntryDisplay.jsp -->
+								<script>
+								</script>
+								<a class="Img185" id="catalogEntry_img3337"
+									href="https://mall.gree.com/mall/ClickInfo?URL=http%3a%2f%2fmall.gree.com%2fmall%2fzh-CN%2fzhuhai%2fKH284000200&amp;evtype=CpgnClick&amp;mpe_id=18601&amp;intv_id=18001&amp;storeId=11171&amp;catalogId=10001&amp;langId=-7"
+									title="Q铂变频空调_冷暖分送 畅享变频_KFR-72LW/(72596)FNAa-A3 冷暖3匹机 立柜式 白色" target="_blank">
+									<img src="http://mall.gree.com/wcsstore/GreeStorefrontAssetStore/images/product/KH284000200/300X300/KH284000200_01.jpg"
+									>
+								</a>
+								<a class="ProTitle185" aria-hidden="true" tabindex="-1"
+									id="WC_CatalogEntryDBThumbnailDisplayJSPF_3337_link_9b"
+									href="https://mall.gree.com/mall/ClickInfo?URL=http%3a%2f%2fmall.gree.com%2fmall%2fzh-CN%2fzhuhai%2fKH284000200&amp;evtype=CpgnClick&amp;mpe_id=18601&amp;intv_id=18001&amp;storeId=11171&amp;catalogId=10001&amp;langId=-7"
+									title="Q铂变频空调_冷暖分送 畅享变频_KFR-72LW/(72596)FNAa-A3 冷暖3匹机 立柜式 白色">Q铂变频空调_冷暖分送
+									畅享变频_KFR-72LW/(72596)FNAa-A3 冷暖3匹机 立柜式 白色</a>
+								<p class="tc Price185">
+									¥6699
+								</p>
+								<!-- END CatalogEntryDisplay.jsp -->
+								<!-- END RecommendedCatalogEntryDisplay.jspf -->
+							</li>
+							<li>
+								<!-- BEGIN RecommendedCatalogEntryDisplay.jspf -->
+								<!-- BEGIN CatalogEntryDisplay.jsp -->
+								<script>
+								</script>
+								<a class="Img185" id="catalogEntry_img11428"
+									href="https://mall.gree.com/mall/ClickInfo?URL=http%3a%2f%2fmall.gree.com%2fmall%2fzh-CN%2fzhuhai%2fA8006022500D&amp;evtype=CpgnClick&amp;mpe_id=18601&amp;intv_id=18001&amp;storeId=11171&amp;catalogId=10001&amp;langId=-7"
+									title="大松金康煲_糙米发芽 健康到家_GDCF-20X60C 顶（金色+咖啡色） WIFI智联 糙米发芽饭功能 【TOSOT】"
+									target="_blank">
+									<img src="http://mall.gree.com/wcsstore/GreeStorefrontAssetStore/images/product/A8006022500D/300X300/A8006022500D_01.jpg"
+										>
+								</a>
+								<a class="ProTitle185" aria-hidden="true" tabindex="-1"
+									id="WC_CatalogEntryDBThumbnailDisplayJSPF_11428_link_9b"
+									href="https://mall.gree.com/mall/ClickInfo?URL=http%3a%2f%2fmall.gree.com%2fmall%2fzh-CN%2fzhuhai%2fA8006022500D&amp;evtype=CpgnClick&amp;mpe_id=18601&amp;intv_id=18001&amp;storeId=11171&amp;catalogId=10001&amp;langId=-7"
+									title="大松金康煲_糙米发芽 健康到家_GDCF-20X60C 顶（金色+咖啡色） WIFI智联 糙米发芽饭功能 【TOSOT】">大松金康煲_糙米发芽
+									健康到家_GDCF-20X60C 顶（金色+咖啡色） WIFI智联 糙米发芽饭功能 【TOSOT】</a>
+								<p class="tc Price185">
+									¥1299
+								</p>
+								<!-- END CatalogEntryDisplay.jsp -->
+								<!-- END RecommendedCatalogEntryDisplay.jspf -->
+							</li>
+							<li>
+								<!-- BEGIN RecommendedCatalogEntryDisplay.jspf -->
+								<!-- BEGIN CatalogEntryDisplay.jsp -->
+								<script>
+								</script>
+								<a class="Img185" id="catalogEntry_img12456"
+									href="https://mall.gree.com/mall/ClickInfo?URL=http%3a%2f%2fmall.gree.com%2fmall%2fzh-CN%2fzhuhai%2fSJ00100280&amp;evtype=CpgnClick&amp;mpe_id=18601&amp;intv_id=18001&amp;storeId=11171&amp;catalogId=10001&amp;langId=-7"
+									title="格力手机三代_暗光拍摄 专业双摄_留住色彩的每次跃动_G0335D 谧夜黑" target="_blank">
+									<img src="http://mall.gree.com/wcsstore/GreeStorefrontAssetStore/images/product/SJ00100280/300X300/SJ00100280_01.jpg"
+										>
+								</a>
+								<a class="ProTitle185" aria-hidden="true" tabindex="-1"
+									id="WC_CatalogEntryDBThumbnailDisplayJSPF_12456_link_9b"
+									href="https://mall.gree.com/mall/ClickInfo?URL=http%3a%2f%2fmall.gree.com%2fmall%2fzh-CN%2fzhuhai%2fSJ00100280&amp;evtype=CpgnClick&amp;mpe_id=18601&amp;intv_id=18001&amp;storeId=11171&amp;catalogId=10001&amp;langId=-7"
+									title="格力手机三代_暗光拍摄 专业双摄_留住色彩的每次跃动_G0335D 谧夜黑">格力手机三代_暗光拍摄 专业双摄_留住色彩的每次跃动_G0335D
+									谧夜黑</a>
+								<p class="tc Price185">
+									¥3600
+								</p>
+								<!-- END CatalogEntryDisplay.jsp -->
+								<!-- END RecommendedCatalogEntryDisplay.jspf -->
+							</li>
+						</ul>
+						<!-- END XCatalogEntryRecommendationTuijian_Horizontal_UI.jspf -->
+						<!-- END XCatalogEntryRecommendationTuijian.jsp -->
+					</div>
+					<a class="next" onclick="recommendationJS.showNext(5)"></a>
+				</div>
+				<!-- END ShopCartDisplay.jsp -->
+			</div>
+		</div>
+	</div>
+	<!-- 弹出框 -->
+	<div class="topbackdiv" style="display: none;"></div>
+	<div class="topBox" style="width:360px; height:160px; margin-left:-180px; margin-top:-80px;display: none;"
+		id="addFailed">
+		<h1 class="ln24 topTitle"><span>温馨提示</span></h1>
+		<a class="popCloseBtn" onclick="closePrompt('');">X</a>
+		<div class="p20 tc mt10"><span class="promptContent" id="errorMsg"></span></div>
+	</div>
+	<!-- 尾 -->
+	<div class="footer_wrapper_position">
+		<!-- BEGIN Footer.jsp -->
+		<div style="left:5px;bottom:0;position:fixed;"><img src="img/ewm01.png"></div>
+		<div class="footer">
+			<div class="wrapper clearfix">
+				<dl>
+					<dt>购物指南</dt>
+					<dd><a href="http://mall.gree.com/mall/zh-CN/zhuhai/helpCenter/1">注册/登录</a></dd>
+					<dd><a href="http://mall.gree.com/mall/zh-CN/zhuhai/helpCenter/2">密码管理</a></dd>
+					<dd><a href="http://mall.gree.com/mall/zh-CN/zhuhai/helpCenter/3">购物流程</a></dd>
+					<dd><a href="http://mall.gree.com/mall/zh-CN/zhuhai/helpCenter/5">使用优惠券</a></dd>
+					<dd><a href="http://mall.gree.com/mall/zh-CN/zhuhai/helpCenter/6">使用礼品卡</a></dd>
+				</dl>
+				<dl>
+					<dt>进度查询</dt>
+					<dd><a href="http://mall.gree.com/mall/zh-CN/zhuhai/helpCenter/7">配送服务查询</a></dd>
+					<dd><a href="http://mall.gree.com/mall/zh-CN/zhuhai/helpCenter/8">全国配送区域</a></dd>
+					<!-- <dd><a href="http://mall.gree.com/mall/zh-CN/zhuhai/helpCenter/10">安装收费标准</a></dd> -->
+				</dl>
+				<dl>
+					<dt>售后服务</dt>
+					<dd><a href="http://mall.gree.com/mall/zh-CN/zhuhai/helpCenter/11">售后服务政策</a></dd>
+					<dd><a href="http://mall.gree.com/mall/zh-CN/zhuhai/helpCenter/12">退换货说明</a></dd>
+					<dd><a href="http://mall.gree.com/mall/zh-CN/zhuhai/helpCenter/13">安装/维修</a></dd>
+					<dd><a href="http://mall.gree.com/mall/zh-CN/zhuhai/helpCenter/14">服务时效</a></dd>
+					<dd><a target="_blank" href="http://pgxt.gree.com:7909/hjzx/zzbx/bx.jsp">服务预约系统</a></dd>
+					<dd><a target="_blank" href="http://pgxt.gree.com:7909/hjzx/fwjdpc/selectbx.jsp"><strong
+								style="color:#c00;">监督服务</strong></a></dd>
+				</dl>
+				<dl>
+					<dt>常见问题</dt>
+					<dd><a href="http://mall.gree.com/mall/zh-CN/zhuhai/helpCenter/15">常见问题说明</a></dd>
+					<dd><a href="http://mall.gree.com/mall/zh-CN/zhuhai/helpCenter/31">权利说明</a></dd>
+				</dl>
+				<dl>
+					<dt>联系我们</dt>
+					<dd><a href="http://mall.gree.com/mall/zh-CN/zhuhai/helpCenter/16">联系我们</a></dd>
+				</dl>
+				<dl>
+					<dt>支付说明</dt>
+					<dd><a href="http://mall.gree.com/mall/zh-CN/zhuhai/helpCenter/17">在线支付</a></dd>
+					<dd><a href="http://mall.gree.com/mall/zh-CN/zhuhai/helpCenter/18">分期付款</a></dd>
+					<dd><a href="http://mall.gree.com/mall/zh-CN/zhuhai/helpCenter/19">退款说明</a></dd>
+					<dd><a href="http://mall.gree.com/mall/zh-CN/zhuhai/helpCenter/20">发票问题</a></dd>
+				</dl>
+				<div class="map">
+					<div>
+						<!-- <p>我们在全国xxx个城市有xxx家门店为您提供 最贴心的服务</p> -->
+						<p class="mt50">服务热线：<span>4008-365-315</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<img style="width:100%;" src="img/zgz.jpg" />
+		</div>
+		<div class="footerM">
+			<div class="wrapper clearfix"><a class="zhengpin pr"><b></b><span>正品有保证</span></a><a
+					class="songhuo pr"><b></b><span>七天无理由退货</span></a><a
+					class="tuihuo pr"><b></b><span>大家电送货到家</span></a><a class="shouhuo pr"><b></b><span>售后无忧</span></a>
+			</div>
+		</div>
+		<div class="wrapper mt20">
+			<p class="c_999">珠海格力电器股份有限公司 版权所有粤ICP备05006515号</p>
+			<p><img src="img/footer_04.png" />
+				<!-- <img src="/wcsstore/GreeStorefrontAssetStore/images/footer_02.png" /> -->
+			</p>
+		</div>
+		<!DOCTYPE html
+			PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+		<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			<meta name="toTop" content="true">
+			<style>
+				#toTop {
+					display: none;
+				}
+				#kefu {
+					bottom: 70px;
+					right: 10px;
+					position: fixed;
+					cursor: pointer;
+				}
+			</style>
+			<script type="text/javascript" src="/wcsstore/GreeStorefrontAssetStore/javascript/Kefu/toTop.js"
+				charset="utf-8"></script>
+			<meta name="keywords" content="">
+			<meta name="description" content="">
+			<script type="text/javascript"
+				src="/wcsstore/GreeStorefrontAssetStore/javascript/coremetrics/eluminateSecureDE.js"></script>
+		</head>
+		<body>
+			<input type="hidden" value="-1002" id="memberId" />
+			<div id="kefu" onclick="NTKF.im_openInPageChat('ga_1000_1548487192525')">
+				<img src="img/kefu.png">
+			</div>
+			<div id="toTop">
+				<img src="/wcsstore/GreeStorefrontAssetStore/images/toTop.png">
+			</div>
+			<script type="text/javascript">
+				var WC_nickName = getCookie('nikeName');
+				var memberId = $("#memberId").val();
+				var productId = $("#productId").val();
+				if (memberId == "-1002") {
+					memberId = "";
+					WC_nickName = "";
+				}
+				if (productId == null || productId == "") {
+					NTKF_PARAM = {
+						siteid: "ga_1000",//企业ID，为固定值，必填
+						settingid: "ga_1000_1548487192525", //接待组ID，为固定值，必填
+						uid: memberId, //用户ID，支持字母、数字、下划线。未登录可以为空，但不能给null，uid赋予的值在显示到小能客户端上
+						uname: WC_nickName, //未登录可以为空，但不能给null，uname赋予的值显示到小能客户端上
+						isvip: "0", //是否为vip用户，0代表非会员，1代表会员，取值显示到小能客户端上
+						userlevel: "0", //网站自定义会员级别，0-N，可根据选择判断，取值显示到小能客户端上
+					};
+				} else {
+					NTKF_PARAM = {
+						siteid: "ga_1000",//企业ID，为固定值，必填
+						settingid: "ga_1000_1548487192525", //接待组ID，为固定值，必填
+						uid: memberId, //用户ID，支持字母、数字、下划线。未登录可以为空，但不能给null，uid赋予的值在显示到小能客户端上
+						uname: WC_nickName, //未登录可以为空，但不能给null，uname赋予的值显示到小能客户端上
+						isvip: "0", //是否为vip用户，0代表非会员，1代表会员，取值显示到小能客户端上
+						userlevel: "0", //网站自定义会员级别，0-N，可根据选择判断，取值显示到小能客户端上
+						itemid: productId,
+						itemparam: ""
+					};
+				}
+			</script>
+			<script type="text/javascript" src="//dl.ntalker.com/js/b2b/ntkfstat.js?siteid=ga_1000"
+				charset="utf-8"></script>
+		</body>
+		</html>
+		<!-- END Header.jsp -->
+		<!-- END Footer.jsp -->
+	</div>
+</body>
+</html>
+<!-- END OrderItemDisplay.jsp -->
