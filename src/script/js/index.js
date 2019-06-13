@@ -111,7 +111,7 @@ new imageplay().init();
                 _this.move($l);
             });
             this.moveul.on('mouseleave',function(){//滑出隐藏移动的块
-                _this.movebox.animate({
+                _this.movebox.stop(true,true).animate({
                     left:-100,
                 })
             })
@@ -119,7 +119,7 @@ new imageplay().init();
 
         move(l){
             var _this=this;  
-            this.movebox.animate({
+            this.movebox.stop(true,true).animate({
                 left:l,
             },150)
         }
@@ -181,7 +181,7 @@ new imageplay().init();
         //点击楼梯li切换对应内容
         ltclick(btn) { //btn:由调用者传的参数--当前点击的louti li
             var $dis_top = this.louceng.eq(btn.index()).offset().top;
-            $('html,body').animate({
+            $('html,body').stop(true,true).animate({
                 scrollTop: $dis_top,
             });
         }
